@@ -1,0 +1,13 @@
+
+
+---
+port: 5000
+mongo_db_url: "mongodb://127.0.0.1:27017/"
+mongo_db_collection_name: "hotel_management_db"
+invalid_input: {"status": "error", "message": "Invalid Input"}
+room_not_found: {"status": "error", "message": "Room Not Found"}
+no_room_found: {"status": "error", "message": "No room saved on the database"}
+room_already_exists: {"status": "error", "message": "The room already exists"}
+room_not_available: {"status": "error", "message": "The room is not available between the date range"}
+reservation_not_found: {"status": "error", "message": "Reservation Not Found"}
+no_room_available: {"status": "error", "message": "No room available at the date range given"}
