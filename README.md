@@ -17,7 +17,8 @@ This program is developed for learning Mongodb.
 - /check_room_availability
 - /get_available_room
 
-### Filtering
+## Filtering
+```
 Filters can be applied on */get_room_list, /get_customer_list, /get_reservation_list.*
 Filters are optional and can be applied to any field of the fields.
 Filters are taken from the user as JSON file with a POST operation.
@@ -32,11 +33,11 @@ Any room with room type 0, 1 or 2 will be returned if the filter above sent to *
 	"date_of_birth": "< 2000-01-01"
 }
 Filter would return customers who has born before the year 2000 on the */get_customer_list*
+```
 
+## Endpoint input-output examples
 
-### Endpoint input-output examples
-
-###### /add_room
+### /add_room
 ```
 input:
 {
@@ -50,7 +51,7 @@ output:
 	"satutus": "success"
 }
 ```
-###### /delete_room
+### /delete_room
 ```
 input:
 {
@@ -62,7 +63,7 @@ output:
 	"satutus": "success"
 }
 ```
-###### /add_customer
+### /add_customer
 ```
 input:
 {
@@ -73,7 +74,7 @@ input:
 	"date_of_birth": "1986-04-27"
 }
 ```
-###### /add_reservation
+### /add_reservation
 ```
 input:
 {
@@ -84,7 +85,7 @@ input:
 }
 ```
 
-###### /check_room_availability
+### /check_room_availability
 ```
 Returns the list of dates that the given room is available.
 input:
@@ -106,7 +107,7 @@ output:
 	"satutus": "success"
 }
 ```
-###### /get_available_room
+### /get_available_room
 ```
 Returns room informations that are available in the date range given.
 input:
